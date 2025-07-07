@@ -16,7 +16,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     useRefreshTokensFallback={true}
 
     //SSO
-    cookieDomain=".ideft.local"
+    cookieDomain={
+    window.location.hostname.includes("localhost") ? ".ideft.local" : undefined
+  }
     cacheLocation="memory" // default là memory, để sử dụng SSO (đăng nhập, đăng xuất) thì cái cacheLocation cần chuyền về memory
   >
     <App />
