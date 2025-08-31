@@ -17,7 +17,6 @@ const Dashboard = () => {
   }, [isAuthenticated])
 
   if (!isAuthenticated) return null
-  console.log('privateUsers: ',privateUsers);
   
   
   return (
