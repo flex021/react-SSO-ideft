@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     cookieDomain={
     window.location.hostname.includes("localhost") ? ".ideft.local" : undefined
   }
-    cacheLocation="memory" // default là memory, để sử dụng SSO (đăng nhập, đăng xuất) thì cái cacheLocation cần chuyền về memory
+    cacheLocation="memory"
   >
     <App />
   </Auth0Provider>

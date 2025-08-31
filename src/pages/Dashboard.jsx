@@ -6,9 +6,6 @@ import customAxiosInstance from '../utils/customAxios'
 
 const Dashboard = () => {
   const { user, isAuthenticated, isLoading } = useAuth0()
-  // console.log('user: ', user)
-  // console.log('isAuthenticated: ', isAuthenticated)
-  // console.log('isLoading: ', isLoading)
   const [ privateUsers, setPrivateUsers ] = useState(null)
 
   useEffect(() => {
